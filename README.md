@@ -2,7 +2,7 @@
 
 A deskop app admin dashboard using tauri.
 Currntly with no functionality just UI.
-Origin UI by [tutsplus](https://codepen.io/tutsplus/pen/gOObdjQ)
+Original UI by [tutsplus](https://codepen.io/tutsplus/pen/gOObdjQ)
 
 # Screen
 ![screen](screens/screen.png)
@@ -34,4 +34,4 @@ Install `sysstat` and run
 ```bash
 watch pidstat --human -C "admin-dashboard" -r -p ALL
 ```
-Note: This doen't capture resource usage for WebView
+Note: This doesn't capture resource usage for WebView
