@@ -1,0 +1,51 @@
+{
+  "version": 0,
+  "root_name": "admin-dashboard",
+  "workspace_crates": {
+    "admin-dashboard": {
+      "full_path": "/home/tan/Documents/Projects/admin-dashboard/src-tauri/Cargo.toml",
+      "dependencies": {
+        "serde_json": {
+          "original_features": [
+            "std"
+          ],
+          "successfully_removed_features": [
+            "std"
+          ],
+          "unsuccessfully_removed_features": []
+        },
+        "tauri": {
+          "original_features": [
+            "shell-open-api",
+            "objc-exception",
+            "compression",
+            "shell-open",
+            "wry"
+          ],
+          "successfully_removed_features": [
+            "objc-exception",
+            "shell-open-api",
+            "compression"
+          ],
+          "unsuccessfully_removed_features": [
+            "shell-open",
+            "wry"
+          ]
+        },
+        "serde": {
+          "original_features": [
+            "std",
+            "serde_derive",
+            "derive"
+          ],
+          "successfully_removed_features": [
+            "std",
+            "serde_derive",
+            "derive"
+          ],
+          "unsuccessfully_removed_features": []
+        }
+      }
+    }
+  }
+}
