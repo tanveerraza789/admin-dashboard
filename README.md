@@ -22,3 +22,16 @@ To start the application run
 ```bash
 ./src-tauri/target/release/admin-dashboard
 ```
+
+# Optimization (Bin size)
+1. Use [`unsed-features analyze`](https://lib.rs/crates/cargo-unused-features) before compile
+2. Use `UPX` on the bin after compile
+      ```bash
+      upx --best --lzma src-tauri/target/release/admin-dashboard
+      ```
+# Check CPU/Mem usage
+Install `sysstat` and run 
+```bash
+watch pidstat --human -C "admin-dashboard" -r -p ALL
+```
+Note: This doen't capture resource usage for WebView
